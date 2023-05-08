@@ -442,8 +442,8 @@ def submit_form():
        alert.accept()
 
 grid_detail()
-# employee_personal_record()
-# empolyee_employment_detail()
-# submit_form()
+employee_personal_record()
+empolyee_employment_detail()
+submit_form()
 
 driver.quit()
