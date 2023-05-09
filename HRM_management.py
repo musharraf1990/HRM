@@ -29,15 +29,15 @@ driver.find_element(By.CSS_SELECTOR, "#subviews > li:nth-child(5) > span").click
 # find Sidebar menu and click on the menu icon
 driver.find_element(By.CSS_SELECTOR,  "#sidebar-trigger > div").click() 
 # sleep(2)
-# wait until the element located
+# wait until the element located Employee mamagement
 wait.until(EC.visibility_of_element_located((By.CSS_SELECTOR,'#category-container > li:nth-child(4) > a > span')))
 # sleep(2)
-# click on that element  
+# click on Employee Management
 driver.find_element(By.CSS_SELECTOR, "#category-container > li:nth-child(4) > a > span").click()  
 # sleep(2)
-# assign the value of sub item 
+# assign the value of sub item (Employee List) of the Employee Management 
 sub_item_drop= wait.until(EC.element_to_be_clickable((By.XPATH, '//*[@id="969145AAB755411B97967F311B830F87"]/a') ) ) 
-# execute the script on that sub item to be clicked
+# execute the script on that sub item to be clicked on the Employee List
 driver.execute_script("arguments[0].click();", sub_item_drop) 
 sleep(7)
 
